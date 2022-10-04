@@ -1,0 +1,51 @@
+body {
+    background-color: #7F3FBF;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    top: 10%;
+    background-color: #fff;
+    height: 7.5%;
+    width: 500px;
+    border: solid black 1px;
+    border-radius: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    padding: 10px 20px;
+}
+
+.container .task-input {
+    padding: 5px;
+    height: 80%;
+    border: solid 2px black;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 1.5rem;
+    background: rgba(120,120,120, 0.2)
+
+}
+
+.container .add-task-button {
+    margin-left: 35px;
+    width: 10%;
+    border: solid green 3px;
+    border-radius: 5px;
+    color: green;
+    font-size: 1.5rem;
+}
+
+.container .add-task-button:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.container .add-task-button:active {
+    background-color: rgb(189, 155, 25);
+    color: white;
+    border-color: rgb(189, 155, 25);
+}
