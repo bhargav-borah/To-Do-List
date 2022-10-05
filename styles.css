@@ -1,5 +1,5 @@
 body {
-    background-color: #7F3FBF;
+    background: radial-gradient(#667eea, #764ba2);;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -25,9 +25,11 @@ body {
     border-radius: 5px;
     width: 80%;
     font-size: 1.5rem;
-    background: rgba(120,120,120, 0.2)
-
+    background: rgba(120,120,120, 0.2);
+    word-wrap: break-word;
+    word-break: break-all;
 }
+
 
 .container .add-task-button {
     margin-left: 35px;
@@ -36,6 +38,9 @@ body {
     border-radius: 5px;
     color: green;
     font-size: 1.5rem;
+    font-weight: 900;
+    transition: 0.3s;
+    padding: 0;
 }
 
 .container .add-task-button:hover {
@@ -48,4 +53,10 @@ body {
     background-color: rgb(189, 155, 25);
     color: white;
     border-color: rgb(189, 155, 25);
+}
+
+.task-container .task {
+    width: 50%;
+    background-color: #fff;
+    height: 100px;
 }
