@@ -12,12 +12,14 @@ addTaskButton.addEventListener('click', () => {
     taskDiv.appendChild(item);
 
     let checkButton = document.createElement('button');
-    checkButton.innerHTML = '<i class="fa fa-check"></i>';
+    checkButton.innerHTML = '<i class="fa-solid fa-check"></i>';
+    checkButton.classList.add('check-button');
     taskDiv.appendChild(checkButton);
 
     let deleteButton = document.createElement('button');
-    deleteButton.innerHTML = '<i class="fa fa-trash"></i>';
-    taskDiv.appendChild(checkButton);
+    deleteButton.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
+    deleteButton.classList.add('delete-button');
+    taskDiv.appendChild(deleteButton);
 
     if(textInputElement.value.trim() === '') {
         alert("Please enter a task");
