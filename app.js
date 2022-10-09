@@ -28,6 +28,25 @@ addTaskButton.addEventListener('click', () => {
     }
     textInputElement.value = '';
 
+    let checked = false;
+    checkButton.addEventListener('click', () => {
 
+        if(!checked) {
+            checkButton.parentElement.style.textDecoration = 'line-through';
+            checked = true;
+        } else {
+            checkButton.parentElement.style.textDecoration = 'none';
+            checked = false;
+        }
+    })
+
+    deleteButton.addEventListener('click', e => {
+        let target = e.target;
+        if (target.parentElement.parentElement == taskDiv) {
+            target.parentElement.parentElement.remove();
+        } else {
+            target.parentElement.remove();
+        }
+    })
 
 })
